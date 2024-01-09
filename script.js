@@ -18,7 +18,7 @@ next.addEventListener('click', () => {
 prev.addEventListener('click', () => {
   currentActive--
 
-  if(currentActive < 1) {
+  if (currentActive < 1) {
     currentActive = 1
   }
 
@@ -40,7 +40,7 @@ function update () {
 
   if (currentActive === 1) {
     prev.disabled = true
-  } else if(currentActive === circles.length) {
+  } else if (currentActive === circles.length) {
     next.disabled = true
   } else {
     prev.disabled = false
